@@ -1,0 +1,4 @@
+recordID,URL,1,2,3,4,5,10
+1,http://123.com/123,10.5072,"Miller, Elizabeth|1|DataCite|0000-0001-5000-0007|1; Foo Data Center",Demonstration of DataCite Properties|2,World Data Center for Climate (WDCC),2018,Census Data|4
+2,http://123.com/1231231231231,10.5072/123,Foo Data Center,This is a title,Publisher,2016,Software|11
+3,http://123.com/567,123,,Title here|3,,2015,
