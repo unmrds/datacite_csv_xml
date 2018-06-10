@@ -62,12 +62,12 @@ class genXML:
             return False
         entry_new = entry_new + [genXML.attr_xml(entry[:2], ref['child'][0])]
         if entry[1] == "Personal":
-            try:
-                name = [x.strip() for x in entry[0].split(',')]
+            name = [x.strip() for x in entry[0].split(',')]
+            if len(name) > 1:
                 first_name = genXML.tag_xml(', '.join(name[1:]), 'givenName')
                 last_name = genXML.tag_xml(name[0], 'familyName')
                 entry_new = entry_new + [first_name] + [last_name]
-            except:
+            else:
                 entry_new = entry_new + [''] * 2
         else:
             entry_new = entry_new + [''] * 2
