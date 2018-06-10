@@ -182,6 +182,10 @@ class genXML:
 
 def gen_xml(entry, colname):
     try:
+        if entry == False:
+            return False
+        if entry == '':
+            return ''
         if colname == '1':
             return genXML.identifier(entry)
         if colname == '5':
