@@ -12,6 +12,8 @@ class genXML:
         """
         if ele_v == '':
             return ''
+        if ele_v == False:
+            return False
         if not ele or type(ele) != str:
             return False
         if all([attr == '',attr_v == '']):
