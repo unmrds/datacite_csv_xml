@@ -65,7 +65,7 @@ def generate_xml(df, export = True, folderpath = ''):
             except:
                 xml_output = ['','',xml_output]
             if export == True:
-                filename = folderpath + '/' + '{}.xml'.format(df['recordID'][i])
+                filename = folderpath + '{}.xml'.format(df['recordID'][i])
                 with codecs.open(filename,'w',encoding='utf8') as xmlfile:
                     xmlfile.write(xml_output[2])
         else:
